@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paquetes y servicios profesionales de fotografía y videografía">
+    <meta name="theme-color" content="#0a0e27">
+    <title>Paquetes | EG Fotografía Profesional</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.png" alt="Logo EG">
+                </a> 
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="./index.html#porfolio">Inicio</a></li>
+                <li><a href="./porfolio.html">Porfolio</a></li>
+                <li><a href="./sobre-mi.html">Sobre mí</a></li>
+                <li><a href="./paquetes.html">Paquetes</a></li>
+                <li><a href="./index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="paquetes-hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Paquetes y Servicios</h1>
+            <p style="color: var(--text-secondary); margin-top: 20px; font-size: 1.1rem;">Encuentra el plan perfecto para tu evento</p>
+        </div>
+    </section>
+
+    <!-- Descripción -->
+    <section style="text-align: center; padding: 60px 20px; background: linear-gradient(135deg, rgba(26, 31, 58, 0.3) 0%, rgba(45, 53, 97, 0.1) 100%); border-bottom: 1px solid rgba(0, 240, 255, 0.1);">
+        <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--text);">Servicios Personalizados</h2>
+        <p style="color: var(--text-secondary); max-width: 800px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8;">Cada evento es único. Ofrezco paquetes flexibles que puedes personalizar según tus necesidades. Todos incluyen edición profesional, entrega en alta resolución y asesoramiento previo.</p>
+    </section>
+
+    <!-- Paquetes Grid -->
+    <section class="packages-container">
+        <div class="packages-grid">
+            <!-- Paquete Básico -->
+            <div class="package-card">
+                <div class="package-badge">Ideal para Principiantes</div>
+                <h3 class="package-name">Gold</h3>
+                <div class="package-price">$450<span>/sesión</span></div>
+                <p class="package-description">Perfecto para sesiones individuales o parejas. Incluye edición básica y entrega en formato digital.</p>
+                <ul class="package-features">
+                    <li>Sesión de 2 horas</li>
+                    <li>Locación a tu elección</li>
+                    <li>50+ fotos editadas</li>
+                    <li>Entrega en USB</li>
+                    <li>Galería online privada</li>
+                </ul>
+                <button class="package-cta">Reservar Ahora</button>
+            </div>
+
+            <!-- Paquete Estándar -->
+            <div class="package-card" style="transform: scale(1.05);">
+                <div class="package-badge" style="background: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent) 100%);">Más Popular ⭐</div>
+                <h3 class="package-name">Platinum</h3>
+                <div class="package-price">$799<span>/evento</span></div>
+                <p class="package-description">Cobertura completa de bodas y eventos. Incluye edición avanzada, álbum digital y sesión de pre-boda.</p>
+                <ul class="package-features">
+                    <li>Cobertura de 8 horas</li>
+                    <li>Sesión pre-boda incluida</li>
+                    <li>150+ fotos editadas</li>
+                    <li>Álbum digital interactivo</li>
+                    <li>Galería online privada</li>
+                    <li>Revisión de 2 rondas</li>
+                </ul>
+                <button class="package-cta">Reservar Ahora</button>
+            </div>
+
+            <!-- Paquete Premium -->
+            <div class="package-card">
+                <div class="package-badge">Lujo Total</div>
+                <h3 class="package-name">Diamond</h3>
+                <div class="package-price">$1,299<span>/evento</span></div>
+                <p class="package-description">Cobertura completa con video profesional. El paquete más completo para tu día especial.</p>
+                <ul class="package-features">
+                    <li>Cobertura de 12 horas</li>
+                    <li>Sesión pre-boda</li>
+                    <li>200+ fotos HD editadas</li>
+                    <li>Video de 5 minutos</li>
+                    <li>Álbum de cuero premium</li>
+                    <li>Fotos impresas 8x10</li>
+                    <li>Galería online privada</li>
+                </ul>
+                <button class="package-cta">Reservar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Adicionales -->
+    <section style="padding: 80px 20px; text-align: center; background: linear-gradient(135deg, rgba(26, 31, 58, 0.3) 0%, rgba(45, 53, 97, 0.1) 100%); border-top: 1px solid rgba(0, 240, 255, 0.1);">
+        <h2 style="font-size: 2.2rem; margin-bottom: 60px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-tertiary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Servicios Adicionales</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <!-- Add-on 1 -->
+            <div style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 30px; transition: all var(--transition);" onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='var(--glow-cyan)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(0, 240, 255, 0.1)'; this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                <h3 style="color: var(--accent); font-size: 1.3rem; margin-bottom: 15px;">📹 Video Highlights</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Video resumen de tu evento editado profesionalmente, con música y efectos especiales.</p>
+                <p style="font-size: 1.2rem; color: var(--accent); font-weight: 700;">$250</p>
+            </div>
+
+            <!-- Add-on 2 -->
+            <div style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 30px; transition: all var(--transition);" onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='var(--glow-cyan)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(0, 240, 255, 0.1)'; this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                <h3 style="color: var(--accent); font-size: 1.3rem; margin-bottom: 15px;">🎞️ Impresiones Premium</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Ampliaciones en papel fotográfico de calidad archívica. Perfectas para enmarcar.</p>
+                <p style="font-size: 1.2rem; color: var(--accent); font-weight: 700;">desde $30</p>
+            </div>
+
+            <!-- Add-on 3 -->
+            <div style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 30px; transition: all var(--transition);" onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='var(--glow-cyan)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(0, 240, 255, 0.1)'; this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                <h3 style="color: var(--accent); font-size: 1.3rem; margin-bottom: 15px;">👨‍💼 Segundo Fotógrafo</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Un segundo fotógrafo profesional para capturar todos los ángulos del evento.</p>
+                <p style="font-size: 1.2rem; color: var(--accent); font-weight: 700;">$400</p>
+            </div>
+
+            <!-- Add-on 4 -->
+            <div style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 30px; transition: all var(--transition);" onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='var(--glow-cyan)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(0, 240, 255, 0.1)'; this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                <h3 style="color: var(--accent); font-size: 1.3rem; margin-bottom: 15px;">💍 Sesión de Anillos</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Sesión especializada para fotografiar detalles como anillos y accesorios.</p>
+                <p style="font-size: 1.2rem; color: var(--accent); font-weight: 700;">$150</p>
+            </div>
+
+            <!-- Add-on 5 -->
+            <div style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 30px; transition: all var(--transition);" onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='var(--glow-cyan)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(0, 240, 255, 0.1)'; this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                <h3 style="color: var(--accent); font-size: 1.3rem; margin-bottom: 15px;">🎥 Transmisión Directa</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Transmite tu evento en vivo a redes sociales o plataformas privadas.</p>
+                <p style="font-size: 1.2rem; color: var(--accent); font-weight: 700;">$300</p>
+            </div>
+
+            <!-- Add-on 6 -->
+            <div style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 30px; transition: all var(--transition);" onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='var(--glow-cyan)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(0, 240, 255, 0.1)'; this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                <h3 style="color: var(--accent); font-size: 1.3rem; margin-bottom: 15px;">📸 Drone Aéreo</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; line-height: 1.6;">Fotografía y video aéreo con drone para perspectivas únicas de tu evento.</p>
+                <p style="font-size: 1.2rem; color: var(--accent); font-weight: 700;">$350</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section style="padding: 80px 20px; max-width: 1000px; margin: 0 auto;">
+        <h2 style="font-size: 2.2rem; text-align: center; margin-bottom: 60px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-tertiary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Preguntas Frecuentes</h2>
+        
+        <div style="display: grid; gap: 30px;">
+            <details style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 25px; cursor: pointer;">
+                <summary style="color: var(--text); font-weight: 700; font-size: 1.1rem; outline: none;">¿Cuál es el depósito requerido?</summary>
+                <p style="color: var(--text-secondary); margin-top: 15px; line-height: 1.8;">Se requiere un depósito del 50% para confirmar la fecha. El saldo restante se debe pagar 7 días antes del evento.</p>
+            </details>
+
+            <details style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 25px; cursor: pointer;">
+                <summary style="color: var(--text); font-weight: 700; font-size: 1.1rem; outline: none;">¿Cuándo recibo las fotos?</summary>
+                <p style="color: var(--text-secondary); margin-top: 15px; line-height: 1.8;">Generalmente entregas entre 2-3 semanas después del evento. Los paquetes premium tienen prioridad en edición.</p>
+            </details>
+
+            <details style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 25px; cursor: pointer;">
+                <summary style="color: var(--text); font-weight: 700; font-size: 1.1rem; outline: none;">¿Incluyen viajes fuera de la ciudad?</summary>
+                <p style="color: var(--text-secondary); margin-top: 15px; line-height: 1.8;">Sí, cubrimos eventos en cualquier ubicación. Se cobra un costo adicional por viaje y hospedaje.</p>
+            </details>
+
+            <details style="background: rgba(26, 31, 58, 0.5); border: 1px solid rgba(0, 240, 255, 0.1); border-radius: 12px; padding: 25px; cursor: pointer;">
+                <summary style="color: var(--text); font-weight: 700; font-size: 1.1rem; outline: none;">¿Puedo hacer cambios después de agendar?</summary>
+                <p style="color: var(--text-secondary); margin-top: 15px; line-height: 1.8;">Claro, todos los paquetes son personalizables. Contacta conmigo para discutir ajustes específicos.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section style="text-align: center; padding: 80px 20px; background: linear-gradient(135deg, rgba(26, 31, 58, 0.4) 0%, rgba(45, 53, 97, 0.2) 100%); border-top: 1px solid rgba(0, 240, 255, 0.1);">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-tertiary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">¿Listo para tu gran evento?</h2>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 30px;">Contáctame hoy para agendar tu sesión y asegurar tu fecha</p>
+        <a href="./index.html#contacto" style="display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%); color: #000; text-decoration: none; border-radius: 50px; font-weight: 600; font-family: 'Poppins'; box-shadow: var(--shadow-lg); transition: all var(--transition);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 30px 80px rgba(0, 240, 255, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-lg)';">Contactar Ahora →</a>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

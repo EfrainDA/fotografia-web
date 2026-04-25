@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Porfolio completo de fotografías profesionales de bodas, eventos y sesiones">
+    <meta name="theme-color" content="#0a0e27">
+    <title>Porfolio | EG Fotografía Profesional</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.png" alt="Logo EG">
+                </a> 
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="./index.html#porfolio">Inicio</a></li>
+                <li><a href="./porfolio.html">Porfolio</a></li>
+                <li><a href="./sobre-mi.html">Sobre mí</a></li>
+                <li><a href="./paquetes.html">Paquetes</a></li>
+                <li><a href="./index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="portfolio-hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Mi Porfolio de Trabajos</h1>
+            <p style="color: var(--text-secondary); margin-top: 20px; font-size: 1.1rem;">Una colección de momentos capturados con pasión</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="bodas">Bodas</button>
+        <button class="filter-btn" data-filter="eventos">Eventos</button>
+        <button class="filter-btn" data-filter="sesiones">Sesiones</button>
+        <button class="filter-btn" data-filter="videos">Videos</button>
+    </section>
+
+    <!-- Galería Porfolio -->
+    <section class="portfolio-grid">
+        <!-- Bodas -->
+        <div class="portfolio-item" data-category="bodas">
+            <img src="./img/inicio1.jpg" alt="Fotografía de boda profesional">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Boda</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Matrimonio Silva</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="bodas">
+            <img src="./img/inicio2.jpg" alt="Ceremonia de boda">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Boda</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Boda Romántica</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="bodas">
+            <img src="./img/inicio-principal.jpg" alt="Detalles de boda">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Boda</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Momentos Especiales</h3>
+            </div>
+        </div>
+
+        <!-- Eventos -->
+        <div class="portfolio-item" data-category="eventos">
+            <img src="./img/inicio-principal.jpg" alt="Evento corporativo">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Evento</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Gala Corporativa</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="eventos">
+            <img src="./img/inicio1.jpg" alt="Celebración">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Evento</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Celebración 2024</h3>
+            </div>
+        </div>
+
+        <!-- Sesiones -->
+        <div class="portfolio-item" data-category="sesiones">
+            <img src="./img/inicio2.jpg" alt="Sesión fotográfica">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Sesión</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Retrato Studio</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="sesiones">
+            <img src="./img/inicio-principal.jpg" alt="Sesión exterior">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Sesión</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Sesión en Naturaleza</h3>
+            </div>
+        </div>
+
+        <!-- Videos -->
+        <div class="portfolio-item" data-category="videos">
+            <img src="./img/inicio1.jpg" alt="Video profesional">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Video</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">🎬 Highlight Video</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="videos">
+            <img src="./img/inicio2.jpg" alt="Cinematografía">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Video</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">🎬 Cinematografía</h3>
+            </div>
+        </div>
+
+        <!-- Más elementos -->
+        <div class="portfolio-item" data-category="bodas">
+            <img src="./img/inicio-principal.jpg" alt="Novios">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Boda</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">El Gran Día</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="eventos">
+            <img src="./img/inicio2.jpg" alt="Fiesta de cumpleaños">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Evento</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Cumpleaños</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="sesiones">
+            <img src="./img/inicio1.jpg" alt="Familia">
+            <div class="portfolio-tags">
+                <span class="portfolio-tag">Sesión</span>
+            </div>
+            <div class="portfolio-overlay">
+                <h3 style="color: var(--accent); font-size: 1.2rem;">Sesión Familiar</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="text-align: center; padding: 80px 20px; background: linear-gradient(135deg, rgba(26, 31, 58, 0.4) 0%, rgba(45, 53, 97, 0.2) 100%); border-top: 1px solid rgba(0, 240, 255, 0.1);">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-tertiary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">¿Te gusta mi trabajo?</h2>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 30px;">Contáctame para agendar tu próxima sesión fotográfica</p>
+        <a href="./index.html#contacto" style="display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%); color: #000; text-decoration: none; border-radius: 50px; font-weight: 600; font-family: 'Poppins'; box-shadow: var(--shadow-lg); transition: all var(--transition);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 30px 80px rgba(0, 240, 255, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-lg)';">Reservar sesión →</a>
+    </section>
+
+    <!-- Modal Lightbox -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-img" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Portfolio Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.dataset.filter;
+                
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                document.querySelectorAll('.portfolio-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeInUp 0.6s ease-out';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeBtn = document.querySelector('.modal-close');
+
+        document.querySelectorAll('.portfolio-item img').forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = this.src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeBtn.addEventListener('click', function() {
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Init animations
+        document.querySelectorAll('.portfolio-item').forEach((item, i) => {
+            item.style.animation = `fadeInUp 0.6s ease-out ${i * 0.1}s both`;
+        });
+    </script>
+</body>
+</html>

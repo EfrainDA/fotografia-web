@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fotografía y videografía profesional especializada en bodas y eventos. Capturamos tus momentos más especiales.">
+    <title>EG | Fotografía y Video Profesional</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.png" alt="Logo">
+                </a> 
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#porfolio">Porfolio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" class="hero hero-inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Cada fotografía y cada video son recuerdos guardados para siempre</h1>
+        </div>
+    </section>
+
+
+    <!--  Porfolio donde se muestran los trabajos realizados  -->
+    <section id="porfolio" class="porfolio">
+        <h1>Porfolio</h1>
+
+        <div class="galeria">
+            <img src="./img/inicio1.jpg" alt="Fotografía profesional de boda 1">
+            <img src="./img/inicio2.jpg" alt="Fotografía profesional de boda 2">
+            <img src="./img/inicio-principal.jpg" alt="Fotografía profesional de evento 1">
+            <img src="./img/inicio-principal.jpg" alt="Fotografía profesional de evento 2">
+        </div>
+
+        <!-- Modal Lightbox -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <img id="modal-img" src="" alt="Imagen ampliada">
+            </div>
+        </div>
+        <a href="porfolio.html" class="ver-mas">Ver más</a>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <img src="./img/efrain.jpg" alt="Efraín González - Fotógrafo profesional">
+        <p>Hola, soy <strong>Efraín González</strong>, fotógrafo y videógrafo especializado en bodas. Me apasiona capturar historias reales, emociones auténticas y momentos irrepetibles, transformándolos en recuerdos que perduran en el tiempo.</p>
+    </section>
+
+    <!-- Servicios ofrecidos -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Fotografía de bodas</li>
+            <li>Fotografía de eventos</li>
+            <li>Videos profesionales</li>
+            <li>Sesiones de fotos</li>
+
+            <h3>Contactanos</h3>
+        </ul>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 Efraín González. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

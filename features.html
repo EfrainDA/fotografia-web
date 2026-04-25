@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características Futuristas - Demostración</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a0a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            background: linear-gradient(135deg, #00d4ff 0%, #8338ec 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .feature-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #00d4ff;
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+        }
+
+        .demo-section {
+            margin-top: 60px;
+            padding: 40px;
+            background: rgba(26, 26, 26, 0.4);
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .demo-button {
+            display: inline-block;
+            padding: 12px 40px;
+            background: linear-gradient(135deg, #00d4ff 0%, #ff006e 100%);
+            color: #000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+        }
+
+        .demo-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 30px 80px rgba(0, 212, 255, 0.4);
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .color-box {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        .accent-primary {
+            background: #00d4ff;
+        }
+
+        .accent-secondary {
+            background: #ff006e;
+        }
+
+        .accent-tertiary {
+            background: #8338ec;
+        }
+
+        .animation-demo {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #00d4ff, #8338ec);
+            border-radius: 12px;
+            animation: slideInUp 1s ease-out, float 3s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(0, 212, 255, 0.1);
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Características Futuristas Implementadas</h1>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🎨 Diseño Moderno</h3>
+                <p>Paleta de colores futurista con cian, rosa y púrpura. Glassmorphism y efectos de profundidad.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎬 Animaciones Dinámicas</h3>
+                <p>Parallax effect, scroll animations, hover effects y loading animations fluidas.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🖼️ Galería Interactiva</h3>
+                <p>Modal expandible con navegación por teclado, zoom suave y efectos de brillo.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>⌨️ Formulario Inteligente</h3>
+                <p>Validación en tiempo real, efectos de enfoque y mensajes de error animados.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🧭 Navegación Premium</h3>
+                <p>Barra sticky con blur effect, scroll suave y subrayado animado en enlaces.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📱 Responsive Design</h3>
+                <p>Totalmente adaptativo en todos los dispositivos con tipografía escalable.</p>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Paleta de Colores</h2>
+            <div class="color-palette">
+                <div class="color-box accent-primary">#00d4ff (Cian)</div>
+                <div class="color-box accent-secondary">#ff006e (Rosa)</div>
+                <div class="color-box accent-tertiary">#8338ec (Púrpura)</div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Animaciones en Acción</h2>
+            <div class="animation-demo">
+                <div class="animated-box">✨</div>
+                <div class="animated-box" style="animation-delay: 0.2s">🚀</div>
+                <div class="animated-box" style="animation-delay: 0.4s">🎨</div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>¡Características Principales!</h2>
+            <p style="color: #a0a0a0; margin: 20px 0;">✓ Scroll animations<br>✓ Parallax effect<br>✓ Glassmorphism<br>✓ Hover effects<br>✓ Keyboard navigation<br>✓ Form validation</p>
+            <a href="index.html" class="demo-button">Ver sitio completo →</a>
+        </div>
+
+        <footer>
+            <p>Sitio de fotografía profesional con tecnología moderna y futurista</p>
+            <p>© 2026 EG Fotografía y Video</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fotografía y videografía profesional especializada en bodas y eventos. Capturamos tus momentos más especiales.">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>EG | Fotografía y Video Profesional</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.png" alt="Logo EG">
+                </a> 
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#porfolio">Inicio</a></li>
+                <li><a href="./porfolio.html">Porfolio</a></li>
+                <li><a href="./sobre-mi.html">Sobre mí</a></li>
+                <li><a href="./paquetes.html">Paquetes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio HERO -->
+    <section id="inicio" class="hero hero-inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Cada fotografía y cada video son recuerdos guardados para siempre</h1>
+        </div>
+    </section>
+
+    <!-- Porfolio con galería interactiva -->
+    <section id="porfolio" class="porfolio">
+        <h1>Porfolio</h1>
+
+        <div class="galeria">
+            <img src="./img/inicio1.jpg" alt="Fotografía profesional de boda 1">
+            <img src="./img/inicio2.jpg" alt="Fotografía profesional de boda 2">
+            <img src="./img/inicio-principal.jpg" alt="Fotografía profesional de evento 1">
+            <img src="./img/inicio-principal.jpg" alt="Fotografía profesional de evento 2">
+        </div>
+
+        <!-- Modal Lightbox Mejorado -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <img id="modal-img" src="" alt="Imagen ampliada">
+            </div>
+        </div>
+        <a href="porfolio.html" class="ver-mas">Ver más trabajos</a>
+    </section>
+
+    <!-- Sobre mí - Sección de presentación -->
+    <section id="sobre-mi">
+        <div class="sobre-mi-content">
+            <h2>Sobre mí</h2>
+            <img src="./img/efrain.jpg" alt="Efraín González - Fotógrafo profesional">
+            <p>Hola, soy <strong>Efraín González</strong>, fotógrafo y videógrafo especializado en bodas. Me apasiona capturar historias reales, emociones auténticas y momentos irrepetibles, transformándolos en recuerdos que perduran en el tiempo.</p>
+        </div>
+    </section>
+
+    <!-- Servicios ofrecidos -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>
+                <h3>📷 Fotografía de bodas</h3>
+                Captura cada detalle especial de tu día
+            </li>
+            <li>
+                <h3>🎉 Fotografía de eventos</h3>
+                Eventos corporativos y celebraciones
+            </li>
+            <li>
+                <h3>🎬 Videos profesionales</h3>
+                Cinematografía de alta calidad
+            </li>
+            <li>
+                <h3>✨ Sesiones de fotos</h3>
+                Retratos y sesiones personalizadas
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de contacto con formulario -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
