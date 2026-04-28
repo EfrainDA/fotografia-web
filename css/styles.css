@@ -92,7 +92,7 @@ nav{
 .nav-menu a:active{background:var(--nav-active-bg);transform:translateY(1px);}
 
 .hero{
-  height:100vh;
+  min-height: 100dvh;
   background:url('../img/inicio-principal.jpg') center/cover no-repeat;
   display:flex;
   justify-content:center;
